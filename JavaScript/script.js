@@ -3,7 +3,7 @@ alert("hello world")
 console.log("code is running")
 console.log("code is alo running")
 
-var a=prompt("enter your running")
+var a=prompt("enter your phone number")
 
 console.log("your number is "+a)
 
