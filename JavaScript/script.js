@@ -15,3 +15,5 @@ else
     console.log("computer is not blasting")
 
 document.title="hey i am good"
+
+document.body.style.backgroundColor="red"
