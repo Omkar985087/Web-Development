@@ -16,4 +16,4 @@ else
 
 document.title="hey i am good"
 
-document.body.style.backgroundColor="red"
+document.body.style.backgroundColor="blue"
