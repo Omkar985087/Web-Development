@@ -13,3 +13,5 @@ if(istrue)
     console.log("computer is blasting")
 else
     console.log("computer is not blasting")
+
+document.title="hey i am good"
