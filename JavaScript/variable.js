@@ -19,7 +19,6 @@ console.log(typeof c,typeof a)
 
 console.log(a);
 
-// Object
 
 let x="Omkar Bhai";
 let y=22;
@@ -31,3 +30,14 @@ let r=null;
 
 console.log(x,y,z,d,q,r);
 console.log(typeof x ,typeof y,typeof z,typeof d,typeof q,typeof r)
+
+// object
+let o={
+    name:"omkar",
+    "job code":5600,
+    "is_handsome":true
+}
+
+console.log(o)
+o.salary="100crores"
+console.log(o)
