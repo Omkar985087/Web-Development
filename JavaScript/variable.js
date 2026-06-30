@@ -18,3 +18,16 @@ console.log(typeof c,typeof a)
 }
 
 console.log(a);
+
+// Object
+
+let x="Omkar Bhai";
+let y=22;
+let z=3.55;
+
+const d=true;
+let q=undefined;
+let r=null;
+
+console.log(x,y,z,d,q,r);
+console.log(typeof x ,typeof y,typeof z,typeof d,typeof q,typeof r)
