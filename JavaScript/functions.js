@@ -8,3 +8,13 @@ function nice(name) {
 
 nice("omkar");
 nice("rohan");
+
+function sum(a,b){
+    return a+b;
+}
+
+result=sum(4,5);
+result2=sum(1,2);
+
+console.log(result);
+console.log(result2);
