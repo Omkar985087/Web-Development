@@ -9,3 +9,13 @@ for(let i=0;i<5;i++)
     console.log(a+i);
 }
 
+let obj={
+    name:"omkar",
+    role:"developer",
+    company:"xyz"
+}
+
+for (const key in obj)
+{
+    console.log(key,obj[key]);
+}
