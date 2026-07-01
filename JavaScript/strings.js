@@ -19,3 +19,4 @@ console.log(b.toUpperCase());
 console.log(b.slice(1,4));
 console.log(b.slice(1));
 console.log(b.concat(real_name));
+console.log(b.replace("sh","77"));
