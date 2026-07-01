@@ -19,3 +19,16 @@ for (const key in obj)
 {
     console.log(key,obj[key]);
 }
+
+for(const c of "omkar")
+{
+    console.log(c);
+}
+
+let i=5;
+
+while(i<6)
+{
+    console.log(i);
+    i++;
+}
