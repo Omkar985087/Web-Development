@@ -20,3 +20,13 @@ for(let i=0;i<arr.length;i++)
     console.log(arr[i]);
 }
 
+let obj={
+    a:1,
+    b:2,
+    c:3
+}
+
+for(let key in obj)
+{
+    console.log(key,obj[key]);
+}
