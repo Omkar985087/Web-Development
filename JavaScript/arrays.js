@@ -9,3 +9,5 @@ console.log(arr[0]);
 console.log(arr.toString());
 console.log(arr.join(" "));
 console.log(arr.pop());
+console.log(arr.push(5));
+console.log(arr);
