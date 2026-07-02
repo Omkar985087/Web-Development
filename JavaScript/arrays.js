@@ -36,3 +36,15 @@ let newarr=arr.map((value)=>{
 });
 
 console.log(newarr);
+
+const grt=((value)=>{
+    if(value>3)
+        return true;
+
+    return false;
+})
+
+console.log(arr.filter(grt));
+
+
+
