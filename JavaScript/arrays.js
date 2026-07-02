@@ -30,3 +30,9 @@ for(let key in obj)
 {
     console.log(key,obj[key]);
 }
+
+let newarr=arr.map((value)=>{
+    return value**2;
+});
+
+console.log(newarr);
