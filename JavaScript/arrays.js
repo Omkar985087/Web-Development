@@ -11,3 +11,4 @@ console.log(arr.join(" "));
 console.log(arr.pop());
 console.log(arr.push(5));
 console.log(arr);
+console.log(arr.splice(0,2));
