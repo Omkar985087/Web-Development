@@ -4,7 +4,10 @@ console.log("nodes tutorial");
 // document.body.firstElementChild.children;
 // document.body.firstChild;
 
-let bhus=document.getElementsByClassName("box")
-console.log(bhus);
+// let boxes=document.getElementsByClassName("box")
+// console.log(boxes);
 
-bhus[3].style.backgroundColor="red";
+// boxes[3].style.backgroundColor="red";
+
+document.getElementById("box3").style.backgroundColor="red";
+
