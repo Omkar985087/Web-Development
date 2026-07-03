@@ -1,5 +1,6 @@
 console.log("nodes tutorial");
 
-document.body.firstElementChild.style.color = "red";
-document.body.firstElementChild.children;
-document.body.firstChild;
+// document.body.firstElementChild.style.color = "red";
+// document.body.firstElementChild.children;
+// document.body.firstChild;
+
