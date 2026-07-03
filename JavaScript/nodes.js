@@ -9,5 +9,7 @@ console.log("nodes tutorial");
 
 // boxes[3].style.backgroundColor="red";
 
-document.getElementById("box3").style.backgroundColor="red";
+// document.getElementById("box3").style.backgroundColor="red";
+
+document.querySelector(".box").style.backgroundColor="red";
 
