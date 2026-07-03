@@ -6,3 +6,5 @@ console.log("nodes tutorial");
 
 let bhus=document.getElementsByClassName("box")
 console.log(bhus);
+
+bhus[3].style.backgroundColor="red";
