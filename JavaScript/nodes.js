@@ -27,3 +27,6 @@ document.querySelector(".conatiner").innerHTML
 document.querySelector(".container").textContent
 
 document.querySelector(".box").innerHTML="hey i am omkar"
+
+document.querySelector(".box").setAttribute("style","display:inline")
+
