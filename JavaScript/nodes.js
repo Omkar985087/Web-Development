@@ -11,9 +11,15 @@ console.log("nodes tutorial");
 
 // document.getElementById("box3").style.backgroundColor="red";
 
-document.querySelector(".box").style.backgroundColor="red";
-console.log(document.querySelectorAll(".box"));
+// document.querySelector(".box").style.backgroundColor="red";
+// console.log(document.querySelectorAll(".box"));
 
-document.querySelectorAll(".box").forEach(e=>{
-    e.style.backgroundColor="green"
-})
+// document.querySelectorAll(".box").forEach(e=>{
+//     e.style.backgroundColor="green"
+// })
+
+document.querySelector(".box")
+
+document.querySelector(".box").innerHTML
+
+document.querySelector(".conatiner").innerHTML
