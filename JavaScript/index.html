@@ -4,19 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your page description">
-    <title>Javascript</title>
+    <title>Event bubbling</title>
     <style>
-        
+        .child{
+            background-color: orange;
+            border:2px solid black;
+            padding: 34px;
+            margin:14px;
+
+        }
+
+        .childcontainer{
+            background-color: green;
+            border:2px solid black;
+            padding: 34px;
+            margin:14px;
+            
+        }
+
+        .container{
+            background-color: yellow;
+            border:2px solid black;
+            padding: 34px;
+            margin:14px;
+            
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">hey i am a box1</div>
+        <section class="childcontainer">
+            <div class="child">i am a child</div>
+        </section>
     </div>
 
-    <button id="btn">change content</button>
 
-    <script src="event.js">
+    <script>
+        document.querySelector(".child").addEventListener("contextmenu",(e)=>{
+            e.stopPropagation();
+            alert("child was clicked");
+        })
+
+        document.querySelector(".childcontainer").addEventListener("contextmenu",()=>{
+            e.stopPropagation();
+            alert("childcontainer was clicked");
+        })
+
+        document.querySelector(".container").addEventListener("contextmenu",()=>{
+            e.stopPropagation();
+            alert("container was clicked");
+        })
     </script>
 </body>
 </html>
