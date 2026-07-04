@@ -45,15 +45,28 @@
             alert("child was clicked");
         })
 
-        document.querySelector(".childcontainer").addEventListener("contextmenu",()=>{
+        document.querySelector(".childcontainer").addEventListener("contextmenu",(e)=>{
             e.stopPropagation();
             alert("childcontainer was clicked");
         })
 
-        document.querySelector(".container").addEventListener("contextmenu",()=>{
+        document.querySelector(".container").addEventListener("contextmenu",(e)=>{
             e.stopPropagation();
             alert("container was clicked");
         })
+
+        function getrandomcolor()
+        {
+            let val1=Math.ceil(0+Math.random()*255);
+            let val3=Math.ceil(0+Math.random()*255);
+            let val2=Math.ceil(0+Math.random()*255);
+
+            return `rgb(${val1}, ${val3},${val2} )`
+        }
+        
+        setInterval(()=>{
+            document.querySelector(".childcontainer").style.background=getrandomcolor()
+        },1000)
     </script>
 </body>
 </html>
