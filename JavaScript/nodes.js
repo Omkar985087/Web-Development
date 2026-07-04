@@ -23,3 +23,5 @@ document.querySelector(".box")
 document.querySelector(".box").innerHTML
 
 document.querySelector(".conatiner").innerHTML
+
+document.querySelector(".container").textContent
