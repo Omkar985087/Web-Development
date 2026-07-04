@@ -16,10 +16,13 @@
     </div>
 
     <script>
-        let div=document.createElement("div");
-        div.innerHTML="i have inserted by omkar "
-        div.setAttribute("class","created");
-        document.querySelector(".container").append(div);
+        //let div=document.createElement("div");
+        //div.innerHTML="i have inserted by omkar "
+        //div.setAttribute("class","created");
+        //document.querySelector(".container").append(div);
+
+        let cont=document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend","<b> i am inserted under water,please help </b>")
 
     </script>
 </body>
