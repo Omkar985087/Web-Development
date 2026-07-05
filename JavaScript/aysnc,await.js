@@ -7,18 +7,23 @@ async function getdata() {
         }, 3500);
     })
 }
-console.log("loading modules")
 
-console.log("do something else");
+async function main() {
+    console.log("loading modules")
 
-console.log("load data");
+    console.log("do something else");
 
-let data = getdata();
-// data.then((v) => {
-//     console.log(data)
+    console.log("load data");
 
-//     console.log("process data");
-// })
-console.log(data)
+    let data = await getdata();
+    // data.then((v) => {
+    //     console.log(data)
 
-console.log("process data");
+    //     console.log("process data");
+    // })
+    console.log(data)
+
+    console.log("process data");
+}
+
+main()
