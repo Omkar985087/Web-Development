@@ -44,6 +44,7 @@ class lion extends animal
     }
     eats()
     {
+        super.eats();
         console.log("kha raha hoon roar")
     }
 }
