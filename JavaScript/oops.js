@@ -18,7 +18,8 @@ console.log("OOPS tutorial");
 // rabbit.__proto__=animal
 
 class animal{
-    constructor(){
+    constructor(name){
+        this.name=name
         console.log("object is created")
     }
 
@@ -32,5 +33,16 @@ class animal{
     }
 }
 
-let a=new animal()
+let a=new animal("Bunny")
 console.log(a);
+
+class lion extends animal
+{
+     constructor(name){
+        super(name)
+        console.log("object is created and he is lion")
+    }
+}
+
+let l=new lion("sher")
+console.log(l)
