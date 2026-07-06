@@ -42,6 +42,10 @@ class lion extends animal
         super(name)
         console.log("object is created and he is lion")
     }
+    eats()
+    {
+        console.log("kha raha hoon roar")
+    }
 }
 
 let l=new lion("sher")
