@@ -1,6 +1,28 @@
 {
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
     "slugify": "^1.6.9"
-  }
+  },
+  "name": "web-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omkar985087/Web-Development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Omkar985087/Web-Development/issues"
+  },
+  "homepage": "https://github.com/Omkar985087/Web-Development#readme"
 }
