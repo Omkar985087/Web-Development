@@ -14,5 +14,7 @@ import http from "http"
 // });
 
 import {a} from "./myserver.js"
+import obj from "./myserver.js"
 
-console.log(a)
+
+console.log(obj);
