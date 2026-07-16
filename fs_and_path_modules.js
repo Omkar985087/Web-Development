@@ -1,4 +1,4 @@
-import http from "http"
+// import http from "http"
 // const { createServer } = require('node:http');
 
 // const hostname = '127.0.0.1';
@@ -13,8 +13,12 @@ import http from "http"
 //   console.log(`Server running at http://${hostname}:${port}/`);
 // });
 
-import {a} from "./myserver.js"
-import obj from "./myserver.js"
+// import {a} from "./myserver.js"
+// import obj from "./myserver.js"
 
 
-console.log(obj);
+// console.log(obj);
+
+const a=require("./myserver2.js");
+console.log(a)
+
