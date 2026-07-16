@@ -8,6 +8,11 @@ console.log("starting")
 
 fs.writeFile("omkar2.txt","omkar is good boy",()=>{
     console.log("done")
+    fs.readFile("omkar2.txt",(error,data)=>{
+        console.log(error,data.toString())
+    })
 })
+
+
 
 console.log("ending")
