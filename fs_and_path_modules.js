@@ -14,11 +14,11 @@
 // });
 
 // import {a} from "./myserver.js"
-// import obj from "./myserver.js"
+import obj from "./myserver.js"
 
 
-// console.log(obj);
+console.log(obj);
 
-const a=require("./myserver2.js");
-console.log(a)
+// const a=require("./myserver2.js");
+// console.log(a)
 

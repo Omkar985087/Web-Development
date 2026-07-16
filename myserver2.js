@@ -5,4 +5,4 @@
 
 let c=56;
 
-module.exports=c
+module.exports=c;
