@@ -13,6 +13,8 @@ fs.writeFile("omkar2.txt","omkar is good boy",()=>{
     })
 })
 
-
+fs.appendFile("omkar.txt","omkarrobo",(e,d)=>{
+    console.log(d);
+})
 
 console.log("ending")
