@@ -15,8 +15,12 @@ app.get('/contact', (req, res) => {
   res.send('Hello Contact me!');
 });
 
-app.get('/blog', (req, res) => {
-  res.send('Hello Blog!');
+app.get('/blog/intro-to-js', (req, res) => {
+  res.send('Hello intro-to-js');
+});
+
+app.get('/blog/intro-to-python', (req, res) => {
+  res.send('Hello intro-to-python');
 });
 
 app.listen(port, () => {
