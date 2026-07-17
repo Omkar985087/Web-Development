@@ -15,13 +15,18 @@ app.get('/contact', (req, res) => {
   res.send('Hello Contact me!');
 });
 
-app.get('/blog/intro-to-js', (req, res) => {
-  res.send('Hello intro-to-js');
+app.get('/blog/:slug', (req, res) => {
+    //login to fetch {slug} from the db
+    res.send(`hello ${req.params.slug}`);
 });
 
-app.get('/blog/intro-to-python', (req, res) => {
-  res.send('Hello intro-to-python');
-});
+// app.get('/blog/intro-to-js', (req, res) => {
+//   res.send('Hello intro-to-js');
+// });
+
+// app.get('/blog/intro-to-python', (req, res) => {
+//   res.send('Hello intro-to-python');
+// });
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
