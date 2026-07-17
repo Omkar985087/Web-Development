@@ -15,9 +15,9 @@ app.get('/contact', (req, res) => {
   res.send('Hello Contact me!');
 });
 
-app.get('/blog/:slug', (req, res) => {
+app.get('/blog/:slug/:second', (req, res) => {
     //login to fetch {slug} from the db
-    res.send(`hello ${req.params.slug}`);
+    res.send(`hello ${req.params.slug} and ${req.params.second}`);
 });
 
 // app.get('/blog/intro-to-js', (req, res) => {
