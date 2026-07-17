@@ -13,6 +13,11 @@ app.post('/', (req, res) => {
     res.send('Hello World!');
 });
 
+app.put('/', (req, res) => {
+    console.log("hey it's a put request")
+    res.send('Hello World!');
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
