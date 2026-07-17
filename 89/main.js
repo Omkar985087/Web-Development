@@ -15,9 +15,11 @@ app.get('/contact', (req, res) => {
   res.send('Hello Contact me!');
 });
 
-app.get('/blog/:slug/:second', (req, res) => {
+app.get('/blog/:slug', (req, res) => {
     //login to fetch {slug} from the db
-    res.send(`hello ${req.params.slug} and ${req.params.second}`);
+    // console.log(req.params); //output{slug:'intro to padosi'}
+    // console.log(req.query) // output {mode:'dark',region:'in'}
+    res.send(`hello ${req.params.slug}`);
 });
 
 // app.get('/blog/intro-to-js', (req, res) => {
