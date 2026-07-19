@@ -1,12 +1,16 @@
 const express=require("express")
 const app =express()
 const port=3000
+const fs=require("fs")
 
 // app.use(express.static("public"))
 
 //middleware 2
 app.use((req,res,next)=>{
-    console.log("M1")
+    console.log(req.headers)
+    req.harry=56;
+    fs.appendFileSync("logs.txt",`${Date.now()} is a ${req.method}\n`)
+    console.log(`${Date.now()} is a ${req.method}`)
     next()
 })
 
