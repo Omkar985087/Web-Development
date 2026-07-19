@@ -8,7 +8,7 @@ const fs=require("fs")
 //middleware 2
 app.use((req,res,next)=>{
     console.log(req.headers)
-    req.harry=56;
+    req.omkar="I am omkar";
     fs.appendFileSync("logs.txt",`${Date.now()} is a ${req.method}\n`)
     console.log(`${Date.now()} is a ${req.method}`)
     next()
@@ -25,7 +25,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/about',(req,res)=>{
-    res.send('Hello contact')
+    res.send('Hello about '+req.omkar)
 })
 
 app.get('/contact',(req,res)=>{
