@@ -1,7 +1,10 @@
 const express=require("express")
 const app =express()
+const birds = require('./routes/birds');
 const port=3000
 const fs=require("fs")
+
+app.use('/birds', birds);
 
 // app.use(express.static("public"))
 
