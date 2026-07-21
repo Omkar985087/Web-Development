@@ -77,3 +77,7 @@ console.log(db)
 db.courses.updateOne({price:0},{$set:{price:1000}})
 
 db.courses.updateMany({price:0},{$set:{price:1000}})
+
+//delete
+
+db.courses.deleteOne({price:299})
