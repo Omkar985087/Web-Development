@@ -7,6 +7,11 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
+    const Todo=new todo({title:"hey first todo",
+        desc:"description of this todo",
+        isdone:false
+    })
+    Todo.save();
     res.send('Hello World!');
 });
 
