@@ -5,4 +5,4 @@ let mypath="C:\\Users\\Omkar Kadam\\Desktop\\Web development\\88\\omkar.txt"
 console.log(path.extname(mypath));
 console.log(path.dirname(mypath));
 
-console.log(path.join("c:/","programs\\omkar.txt"))
+console.log(path.join("c:/","programs\\omkar.txt")) 
