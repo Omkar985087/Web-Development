@@ -1,10 +1,13 @@
 import logo from './logo.svg';
-import { useState } from 'react';
+import { use, useState } from 'react';
+import "./App.css"
 
 function App() {
+  const [value,setvalue]=useState(0);
   return (
     <div className="App">
-      hey harry
+      <div className='value'>{value}</div>
+      <button onClick={()=>{setvalue(1)}}>click me</button>
     </div>
   );
 }
