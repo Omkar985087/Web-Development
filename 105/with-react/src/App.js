@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className='value'>{value}</div>
-      <button onClick={()=>{setvalue(1)}}>click me</button>
+      <button onClick={()=>{setvalue(value+1)}}>click me</button>
     </div>
   );
 }
