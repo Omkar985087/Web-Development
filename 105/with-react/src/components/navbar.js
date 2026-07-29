@@ -1,8 +1,9 @@
 import React from 'react'
 import Footer from "./footer"
-const navbar = () => {
+const navbar = ({logotext}) => {
   return (
     <div>
+      <div className="logo">{logotext}</div>
         <ul>
             <li>home</li>
             <li>about</li>
