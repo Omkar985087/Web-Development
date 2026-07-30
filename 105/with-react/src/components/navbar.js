@@ -9,7 +9,6 @@ const navbar = ({logotext}) => {
             <li>about</li>
             <li>contact us</li>
         </ul>
-
         <Footer/>
     </div>
   )
