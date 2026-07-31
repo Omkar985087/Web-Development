@@ -1,15 +1,16 @@
 import "./App.css"
 import Navbar from "./components/Navbar"
 import Footer from "./components/footer"
+import Card from "./components/card"
 
 function App() {
 
   return (
     <>
       <Navbar/>
-      <main>
-        this is my sites main content
-      </main>
+      <div className="cards">
+        <Card/>
+      </div>
       <Footer/>
     </>
   )
