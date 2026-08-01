@@ -8,6 +8,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const [first, setFirst] = useState(0)
+  const [Color, setColor] = useState(0)
 
   useEffect(()=>{
     alert("hey welcome to my website")
@@ -15,6 +16,7 @@ function App() {
 
   useEffect(()=>{
     alert("count was changed")
+    setColor(Color+1)
   },[count])
 
   useEffect(()=>{
@@ -22,7 +24,7 @@ function App() {
   },[first])
   return (
     <>
-      <Navbar color="red" />
+      <Navbar color={"red"+Color}/>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
