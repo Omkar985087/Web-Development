@@ -5,7 +5,7 @@ const Navbar=({color})=>{
     //case 1:Run on every render
     useEffect(()=>{
         alert("hey i will run on every render")
-    },[])
+    })
 
     //case 2:Run only on first render
     useEffect(()=>{
