@@ -6,12 +6,13 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const a=useRef(0)
+  const btnref=useRef(0)
 
 
   useEffect(()=>{
-    a.current=a.current+1;
-    console.log(`rendering and the value of a is ${a.current}`)
+  
+    console.log(`rendering `)
+    btnref.current.style.backgroundColor="red"
   })
 
   return (
@@ -29,6 +30,7 @@ function App() {
           </p>
         </div>
         <button
+          ref={btnref}
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 1)}
