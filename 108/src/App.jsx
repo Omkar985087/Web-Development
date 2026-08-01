@@ -10,18 +10,18 @@ function App() {
   const [first, setFirst] = useState(0)
   const [Color, setColor] = useState(0)
 
-  useEffect(()=>{
-    alert("hey welcome to my website")
-  },[])
+  // useEffect(()=>{
+  //   alert("hey welcome to my website")
+  // },[])
 
   useEffect(()=>{
     alert("count was changed")
     setColor(Color+1)
   },[count])
 
-  useEffect(()=>{
-    alert("first was changed")
-  },[first])
+  // useEffect(()=>{
+  //   alert("first was changed")
+  // },[first])
   return (
     <>
       <Navbar color={"red"+Color}/>
