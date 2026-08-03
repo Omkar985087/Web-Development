@@ -6,7 +6,31 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [showbtn,setshowbtn] = useState(false)
+  const [showbtn, setshowbtn] = useState(false)
+  const [todo, settodo] = useState([
+    {
+      title: "hey",
+      desc: "I am good todo"
+    },
+
+    {
+      title: "hey another todo",
+      desc: "I am good todo too"
+    },
+
+    {
+      title: "hey grocery ",
+      desc: "I am good todo too"
+    },
+  ])
+
+  const todo = ({ todo }) => {
+    return
+    (<>
+      <div className="todo">{todo.title}</div>
+      <div className="todo">{todo.desc}</div>
+    </>)
+  }
   return (
     <>
       <section id="center">
