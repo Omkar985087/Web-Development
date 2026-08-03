@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const [showbtn, setshowbtn] = useState(false)
-  const [todo, settodo] = useState([
+  const [todos, settodos] = useState([
     {
       title: "hey",
       desc: "I am good todo"
@@ -24,12 +24,13 @@ function App() {
     },
   ])
 
-  const todo = ({ todo }) => {
-    return
-    (<>
+  const Todo = ({ todo }) => {
+    return(<>
+    <div className="m-4 border-1">
       <div className="todo">{todo.title}</div>
       <div className="todo">{todo.desc}</div>
-    </>)
+    </div>
+    </>);
   }
   return (
     <>
@@ -43,6 +44,12 @@ function App() {
           <h1>Get started</h1>
           {/* {showbtn?<button>I will be shown only when second button is clicked</button>:"thenga"} */}
           {showbtn && <button>showbtn is true</button>}
+
+          {
+            todos.map(todo=>{
+              return <Todo todo={todo}/>
+            })
+          }
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
