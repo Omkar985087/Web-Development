@@ -18,7 +18,7 @@ function App() {
         <div>
           <h1>Get started</h1>
           {/* {showbtn?<button>I will be shown only when second button is clicked</button>:"thenga"} */}
-          {showbtn && <button>I will be shown only when second button is clicked</button>}
+          {showbtn && <button>showbtn is true</button>}
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
