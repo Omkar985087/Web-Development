@@ -47,7 +47,7 @@ function App() {
 
           {
             todos.map(todo=>{
-              return <Todo todo={todo}/>
+              return <Todo key={todo.title} todo={todo}/>
             })
           }
           <p>
