@@ -10,7 +10,6 @@ function App() {
 
 
   useEffect(()=>{
-  
     console.log(`rendering `)
     btnref.current.style.backgroundColor="red"
   })
